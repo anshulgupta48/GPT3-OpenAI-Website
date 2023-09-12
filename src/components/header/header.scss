@@ -1,0 +1,243 @@
+// <======== Importing App SCSS File ========>
+@import "../../App.scss";
+
+
+// Header Section
+#header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px 20px;
+    padding: 0px 40px;
+}
+
+#header .left-header h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -2px;
+    background: var(--gradient-text);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+#header .left-header p {
+    color: var(--color-text);
+    margin: 20px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#header .left-header .left-header-input {
+    width: 100%;
+    padding: 10px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .left-header .left-header-input input {
+    flex: 2 1;
+    min-height: 50px;
+    width: 100%;
+    color: #fff;
+    background-color: var(--color-footer);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    border: 2px solid var(--color-footer);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    padding: 0 20px;
+}
+
+#header .left-header .left-header-input .btn {
+    flex: 0.6 1;
+    min-height: 50px;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #FF4820;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    border: 2px solid #FF4820;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    cursor: pointer;
+}
+
+#header .left-header .left-header-input .btn:hover {
+    filter: brightness(0.8);
+}
+
+#header .left-header .left-header-users {
+    display: flex;
+}
+
+#header .left-header .left-header-users img {
+    height: 38px;
+    width: 181.79px;
+}
+
+#header .left-header .left-header-users span {
+    color: #fff;
+    margin: 0 0 0 20px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 38px;
+    text-align: center;
+}
+
+#header .right-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#header .right-header img {
+    height: 95%;
+    width: 95%;
+}
+
+
+// CSS Properties For Minimum Width 1500px
+@media (min-width: 1500px) {
+    #header .right-header img {
+        max-height: 650px;
+    }
+
+    #header .left-header h1 {
+        font-size: 70px;
+        line-height: 75px;
+    }
+
+    #header .left-header p {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    #header .left-header .left-header-input input {
+        min-height: 60px;
+        font-size: 25px;
+    }
+
+    #header .left-header .left-header-input .btn {
+        min-height: 60px;
+        font-size: 25px;
+    }
+
+    #header .left-header .left-header-users img {
+        height: 50px;
+        width: 200.79px;
+    }
+
+    #header .left-header .left-header-users span {
+        font-size: 20px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 1050px
+@media (max-width: 1050px) {
+    #header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #header .left-header {
+        margin-bottom: 30px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 650px
+@media (max-width: 650px) {
+    #header .left-header h1 {
+        font-size: 48px;
+        line-height: 60px;
+    }
+
+    #header .left-header p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    #header .left-header .left-header-users {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #header .left-header .left-header-users span {
+        margin: 0px;
+    }
+
+    #header .left-header .left-header-input input,
+    #header .left-header .left-header-input .btn {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 500px
+@media (max-width: 500px) {
+    #header .left-header h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    #header .left-header p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    #header .left-header .left-header-input input,
+    #header .left-header .left-header-input .btn {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 450px
+@media (max-width: 450px) {
+    #header {
+        padding: 0px 20px;
+    }
+
+    #header .left-header h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    #header .left-header .left-header-input {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #header .left-header .left-header-input input {
+        width: 80%;
+        margin-bottom: 2px;
+    }
+
+    #header .left-header .left-header-input .btn {
+        min-height: 35px;
+        max-width: max-content;
+        padding: 0px 20px;
+        border-radius: 5px;
+    }
+
+    #header .left-header .left-header-users {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px 0px;
+    }
+
+    #header .left-header .left-header-users span {
+        text-align: left;
+        line-height: 16px;
+    }
+}

@@ -1,0 +1,111 @@
+// <======== Importing App SCSS File ========>
+@import '../../App.scss';
+
+
+// Banner-Container Section
+#banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 40px;
+    padding: 20px 30px;
+    color: #fff;
+    background: var(--gradient-bar);
+    border-radius: 10px;
+}
+
+#banner-container .left-banner p {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+#banner-container .left-banner h3 {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 45px;
+}
+
+#banner-container .right-banner .btn {
+    color: #fff;
+    background-color: #000;
+    min-width: 150px;
+    padding: 7px 10px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+#banner-container .right-banner .btn:hover {
+    filter: brightness(0.8);
+}
+
+
+// CSS Properties For Minimum Width 1500px
+@media (min-width: 1500px) {
+    #banner-container .left-banner p {
+        font-size: 20px;
+    }
+
+    #banner-container .left-banner h3 {
+        font-size: 30px;
+    }
+
+    #banner-container .right-banner .btn {
+        padding: 15px 25px;
+        font-size: 25px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 650px
+@media (max-width: 650px) {
+    #banner-container {
+        flex-direction: column;
+    }
+
+    #banner-container .right-banner {
+        margin-top: 20px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 550px
+@media (max-width: 550px) {
+    #banner-container {
+        flex-direction: column;
+        margin: 40px 20px;
+    }
+
+    #banner-container .left-banner h3 {
+        font-size: 18px;
+        line-height: 32px;
+    }
+
+    #banner-container .right-banner .btn {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 400px
+@media (max-width: 400px) {
+    #banner-container .left-banner p {
+        font-size: 11px;
+    }
+
+    #banner-container .left-banner h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    #banner-container .right-banner .btn {
+        min-width: 115px;
+        font-size: 12px;
+    }
+}

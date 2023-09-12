@@ -1,0 +1,215 @@
+// <======== Importing App SCSS File ========>
+@import '../../App.scss';
+
+
+// WhatGPT3-Container Section
+#whatgpt3-container {
+    margin: 40px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#whatgpt3-container .whatgpt3-container-intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#whatgpt3-container .whatgpt3-container-intro h1 {
+    flex: 1 1;
+    position: relative;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#whatgpt3-container .whatgpt3-container-intro h1::after {
+    content: "";
+    height: 3px;
+    width: 38px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: var(--gradient-bar);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#whatgpt3-container .whatgpt3-container-intro p {
+    flex: 2 1;
+    max-width: 700px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--color-text);
+}
+
+#whatgpt3-container .whatgpt3-container-heading {
+    margin: 40px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#whatgpt3-container .whatgpt3-container-heading h1 {
+    max-width: 510px;
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+#whatgpt3-container .whatgpt3-container-heading p {
+    color: var(--color-subtext);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+#whatgpt3-container .whatgpt3-container-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#whatgpt3-container .whatgpt3-container-features .features-box {
+    width: 26%;
+    margin: 0px 20px;
+    display: unset;
+}
+
+#whatgpt3-container .whatgpt3-container-features .features-box h1 {
+    color: #fff;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    position: relative;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+#whatgpt3-container .whatgpt3-container-features .features-box h1::after {
+    content: "";
+    height: 3px;
+    width: 38px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: var(--gradient-bar);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+#whatgpt3-container .whatgpt3-container-features .features-box p {
+    color: var(--color-text);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+
+// CSS Properties For Maximum Width 1500px
+@media (min-width: 1500px) {
+    #whatgpt3-container .whatgpt3-container-intro h1 {
+        font-size: 25px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-intro p {
+        font-size: 20px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-heading h1 {
+        font-size: 40px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-heading p {
+        font-size: 22px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-features .features-box h1 {
+        font-size: 25px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-features .features-box p {
+        font-size: 20px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 850px
+@media (max-width: 850px) {
+    #whatgpt3-container .whatgpt3-container-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-heading p {
+        margin-top: 10px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 710px
+@media (max-width: 710px) {
+    #whatgpt3-container .whatgpt3-container-features .features-box {
+        margin-top: 20px;
+        width: 40%;
+    }
+}
+
+
+// CSS Properties For Maximum Width 650px
+@media (max-width: 650px) {
+    #whatgpt3-container .whatgpt3-container-intro {
+        flex-direction: column;
+    }
+
+    #whatgpt3-container .whatgpt3-container-intro h1 {
+        margin-bottom: 20px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-features {
+        flex-direction: column;
+    }
+
+    #whatgpt3-container .whatgpt3-container-features .features-box {
+        width: 100%;
+    }
+
+    #whatgpt3-container .whatgpt3-container-features .features-box p {
+        margin-top: 5px;
+    }
+}
+
+
+// CSS Properties For Maximum Width 400px
+@media (max-width: 400px) {
+    #whatgpt3-container {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-heading h1 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    #whatgpt3-container .whatgpt3-container-features .features-box {
+        min-width: 100%;
+        margin: 10px 0px;
+    }
+}

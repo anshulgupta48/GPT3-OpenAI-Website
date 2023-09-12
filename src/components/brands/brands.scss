@@ -1,0 +1,22 @@
+// <======== Importing App SCSS File ========>
+@import '../../App.scss';
+
+
+// Brands-Container Section
+#brands-container {
+    padding: 0px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#brands-container .brands-container-img {
+    flex: 1 1;
+    min-width: 120px;
+    max-width: 150px;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/GPT3-OpenAI-Website/static/css/main.225bf95b.css",
+    "main.js": "/GPT3-OpenAI-Website/static/js/main.51cfd5b9.js",
+    "static/media/header-banner.png": "/GPT3-OpenAI-Website/static/media/header-banner.aa60586ba1ba53762d94.png",
+    "static/media/possibility.png": "/GPT3-OpenAI-Website/static/media/possibility.525f13b61a2157d44de0.png",
+    "static/media/blog-3.png": "/GPT3-OpenAI-Website/static/media/blog-3.d922323861096f25274f.png",
+    "static/media/blog-2.png": "/GPT3-OpenAI-Website/static/media/blog-2.bfaa1c1e3851158e0e1f.png",
+    "static/media/blog-1.png": "/GPT3-OpenAI-Website/static/media/blog-1.ab0eb367561796e91532.png",
+    "static/media/users.png": "/GPT3-OpenAI-Website/static/media/users.5cd2d6fbcd48bd63f106.png",
+    "static/media/logo.svg": "/GPT3-OpenAI-Website/static/media/logo.16efaf42dda438e5346df59725d9e6a6.svg",
+    "index.html": "/GPT3-OpenAI-Website/index.html",
+    "main.225bf95b.css.map": "/GPT3-OpenAI-Website/static/css/main.225bf95b.css.map",
+    "main.51cfd5b9.js.map": "/GPT3-OpenAI-Website/static/js/main.51cfd5b9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.225bf95b.css",
+    "static/js/main.51cfd5b9.js"
+  ]
+}
